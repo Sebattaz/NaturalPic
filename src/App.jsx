@@ -1,15 +1,15 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import 'bootstrap/dist/css/bootstrap.min.css'
-
+import { PicProvider } from "./context/PicContext";
 import Favorites from "./views/Favorites";
 import Home from "./views/Home";
 
-const PHOTO_URL = "/photos.json";
+//const PHOTO_URL = "/photos.json";
 
 const App = () => {
   return (
-    <div>
+    <PicProvider>
       <Navbar />
 
       <Routes>
@@ -22,7 +22,7 @@ const App = () => {
           element={<Favorites />}
         />
       </Routes>
-    </div>
+    </PicProvider>
   );
 };
 export default App;
