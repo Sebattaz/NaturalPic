@@ -5,7 +5,6 @@ import { PicProvider } from "./context/PicContext";
 import Favorites from "./views/Favorites";
 import Home from "./views/Home";
 
-//const PHOTO_URL = "/photos.json";
 
 const App = () => {
   return (
