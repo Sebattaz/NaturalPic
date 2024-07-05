@@ -12,8 +12,8 @@ const Gallery = () => {
         
         photos.map(PD=>(
           <div key={PD.id}>
-              <div className="container">
-                <img src={PD.src.tiny} alt={PD.alt} />
+              <div className="container position-relative">
+                <img className=''src={PD.src.tiny} alt={PD.alt} />
                   <IconHeart filled={PD.liked}/>
                   <div className='photoTexto'>
                     <p className='photoAlt'>{PD.alt}</p>

@@ -1,6 +1,9 @@
+import './IconHeart.css'
+
 const IconHeart = ({ filled }) => {
   return (
     <svg
+      className="icon-heart"
       width="40px"
       viewBox="0 0 24 24"
     >
