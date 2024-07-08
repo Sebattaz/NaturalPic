@@ -14,7 +14,7 @@ const Gallery = () => {
           <div key={PD.id}>
               <div className="container position-relative">
                 <img className=''src={PD.src.tiny} alt={PD.alt} />
-                  <IconHeart filled={PD.liked}/>
+                  <IconHeart filled={PD.liked} idL={PD.id} srcL={PD.src.tiny} altL={PD.alt}/>
                   <div className='photoTexto'>
                     <p className='photoAlt'>{PD.alt}</p>
                   </div>  
